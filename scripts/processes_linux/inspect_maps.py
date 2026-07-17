@@ -11,7 +11,7 @@ def parse_maps(pid):
     regions = []
     with open(path, 'r') as f:
         for line in f:
-            # example line:
+            # Пример строки:
             # 00400000-0040b000 r--p 00000000 08:02 131073 /usr/bin/cat
             m = re.match(r'([0-9a-fA-F]+)-([0-9a-fA-F]+) (\S{4}) (\S+) (\S+):(\S+) (\d+)\s*(.*)', line)
             if not m:

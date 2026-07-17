@@ -8,7 +8,7 @@ import mmap
 import ctypes
 import os
 
-MARKER = b"SECRET_MARKER_AYMAL_1234567890"  # видимый маркер
+MARKER = b"SECRET_MARKER_AIMAL_1234567890"  # видимый маркер
 BUF_SIZE = 1024 * 1024  # 1 MB
 
 def allocate_buffer():

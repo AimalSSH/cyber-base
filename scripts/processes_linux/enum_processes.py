@@ -34,7 +34,6 @@ def main():
     for proc in psutil.process_iter(attrs=['pid']):
         pid = proc.info['pid']
         out.append(dump_process(pid))
-    # pretty print JSON
     print(json.dumps(out, indent=2, ensure_ascii=False))
 
 if __name__ == "__main__":
